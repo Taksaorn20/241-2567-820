@@ -5,92 +5,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!--ส่วนที่แสดงออกที่หน้าเว็บ-->
-    Hello World! <br>
-    <h1>สวัสดีศิลปากร</h1>
-    <h2>Web Technology For Data Science</h2>
-    <h3>6621655240</h3>
-    <h4>xxx</h4>
-    <h5>xxx</h5>
-    <h6>xxx</h6>
-    
-    <p>Paragraph</p>
-    <p>Paragraph</p>
-    <p>Paragraph</p>
+    <div class="container">
+        <div class="header">
+             Register form 
+        </div>
+        <div class="flex form-input">  
+              <div class="header-form">ชื่อ</div>
+              <input class="form" name="firstname" type="text">
+        </div>
+        <div class="flex form-input">
+             <div class="header-form">นามสกุล</div>
+             <input class="form" name="lastname" type="text"> <br>
+        </div>
+        <div class="flex form-input">
+             <div class="header-form">อายุ</div>
+             <input class="form" name="age" type="number" min="0" max="100">
+        </div>
 
-    <div>Paragraph</div>
-    <div>Paragraph</div>
-    <div>Paragraph</div>
-
-    <div>
-        <div>
-             <div>
-
+        <div class="flex gender form-input">
+             <div class="header-form">เพศ</div>
+             <div class="flex">
+                <div>
+                    <input name="gender" type="radio"> ชาย
+                </div>
+                <div>
+                    <input name="gender" type="radio"> หญิง
+                </div>
+                <div>
+                    <input name="gender" type="radio"> ไม่ระบุ
+                </div>
              </div>
         </div>
-    </div>
-
-    <ul>
-        <li>Coffee</li>
-        <li>Tea</li>
-        <li>Milk</li>
-    </ul>
-    <ol>
-        <li>Coffee</li>
-        <li>Tea</li>
-        <li>Milk</li>
-    </ol>
-
-    <table>
-        <tr>
-            <th>Company 1</th>
-            <th>Company 2</th>
-            <th>Company 3</th>
-        </tr>
-        <tr>
-            <td>Maria</td>
-            <td>Maria</td>
-            <td>Maria</td>
-        </tr>
-        <tr>
-            <td>Maria</td>
-            <td>Maria</td>
-            <td>Maria</td>
-        </tr>
-    </table>
-
-    <table>
-      <thead>
-        <tr>
-            <th>Firstname</th>
-            <th>Lastname</th>
-            <th>Age</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-            <td>Taksaorn</td>
-            <td>Udomkitchaiwat</td>
-            <td>19</td>
-        </tr>
-        <tr>
-            <td>Donmuang</td>
-            <td>Udomkitchaiwat</td>
-            <td>51</td>
-        </tr>
-      </tbody>
-    </table>
-    <a href="https://www.w3schools.com/" target="blank">Visit W3Schools.com!</a>
-    <img 
-    src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fpcgshoponline.com%2Fblog%2F2024%2F09%2Fsamoyed-dog&psig=AOvVaw2SWME0nYRkn78eqlS0CjHw&ust=1734427300184000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCMCN9K37q4oDFQAAAAAdAAAAABAE" 
-    width="500px" 
-    height="500px"
-    >
-    <section>
-        <h1>WWF</h1>
-        <p>The World Wide Fund for Nature (WWF) is an international organization working on issues regarding the conservation, research and restoration of the environment, formerly named the World Wildlife Fund. WWF was founded in 1961.</p>
-    </section>
+        <div class="form-input">
+             งานอดิเรก
+             <div>
+                  <input name="interest" type="checkbox" value="อ่านหนังสือ"> อ่านหนังสือ
+             </div>
+             <div>
+                  <input name="interest" type="checkbox" value="ดูหนัง"> ดูหนัง
+             </div>
+             <div>
+                  <input name="interest" type="checkbox" value="ฟังเพลง"> ฟังเพลง
+             </div>
+        </div>
+        <div class="form-input">
+             คำอธิบาย
+             <textarea name="description"></textarea>
+        </div>
+        <div class="center">
+            <button onclick="submitData()" class="button">ส่งข้อมูล</button>
+        </div>
+   </div>
+   <script src="index.js"></script>
 </body>
 </html>
